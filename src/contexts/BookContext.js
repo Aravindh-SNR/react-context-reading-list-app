@@ -7,7 +7,8 @@ const BookContextProvider = props => {
     const [books, dispatch] = useReducer(bookReducer, JSON.parse(localStorage.getItem('books')) || []);
 
     useEffect(() => {
-        localStorage.setItem('books', JSON.stringify(books));
+        books.length ? localStorage.setItem('books', JSON.stringify(books))
+                     : localStorage.removeItem('books');
     }, [books]);
 
     return (
