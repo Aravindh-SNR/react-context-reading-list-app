@@ -1,6 +1,8 @@
 import React, {useContext} from 'react';
 import { BookContext } from '../contexts/BookContext';
 
+// Component for displaying the title and author of a book, along with remove book functionality
+
 const BookDetails = ({book}) => {
     const {dispatch} = useContext(BookContext);
 

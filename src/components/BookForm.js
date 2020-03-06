@@ -1,6 +1,8 @@
 import React, {useContext, useState, useRef} from 'react';
 import { BookContext } from '../contexts/BookContext';
 
+// Component for adding a book to the list
+
 const BookForm = () => {
     const {dispatch} = useContext(BookContext);
     const [title, setTitle] = useState('');

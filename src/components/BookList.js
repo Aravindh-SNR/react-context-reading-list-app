@@ -2,6 +2,8 @@ import React, {useContext} from 'react';
 import { BookContext } from '../contexts/BookContext';
 import BookDetails from './BookDetails';
 
+// Component for displaying the list of books
+
 const BookList = () => {
     const {books} = useContext(BookContext);
 

@@ -1,3 +1,5 @@
+// Reducer function that will be passed into the useReducer hook to manage state in the BookContext component
+
 export const bookReducer = (state, action) => {
     switch(action.type) {
         case 'ADD_BOOK':
